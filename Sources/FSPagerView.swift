@@ -527,6 +527,10 @@ open class FSPagerView: UIView,UICollectionViewDataSource,UICollectionViewDelega
         self.collectionView.setContentOffset(contentOffset, animated: animated)
     }
     
+    open func scrollRectToVisible(_ rect: CGRect, animated: Bool) {
+        self.collectionView.scrollRectToVisible(rect, animated: animated)
+    }
+    
     /// Returns the index of the specified cell.
     ///
     /// - Parameter cell: The cell object whose index you want.
